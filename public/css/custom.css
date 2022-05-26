@@ -1,0 +1,344 @@
+/* added */
+.nav-sidebar .nav-item > .nav-link {
+  margin-bottom: 0rem;
+}
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid #00264b;
+}
+.select2-container--default .select2-selection--single, .select2-selection .select2-selection--single {
+  border: 1px solid #00264b;
+}
+.dropzone {
+  border: 1px solid #00264b;
+}
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+.dropdown-item, dropdown-menu {
+  font-size: 14px;
+  font-weight: 200;
+}
+.form-control {
+    border: 1px solid #00264b;
+}
+.sidebar-dark-primary .sidebar a {
+  color: #fff;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #00264b;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #00264b;
+  border-color: #00264b;
+}
+/* new added */
+.btn-danger {
+   // background-color: #00264b;
+   // border-color: #00264b;    
+}
+.btn-danger:hover {
+  background-color: #00264b;
+  border-color: #00264b;
+}
+.btn-success {
+    background-color: #00264b;
+    border-color: #00264b;  
+}
+.btn-success:hover {
+    background-color: #00264b;
+    border-color: #00264b;  
+}
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: #00264b;
+    border-color: #00264b; 
+}
+.btn-primary {
+    background-color: #00264b;
+    border-color: #00264b;  
+}
+.btn-primary:hover {
+    background-color: #00264b;
+    border-color: #00264b;  
+}
+.btn-info {
+    // background-color: #00264b;
+   // border-color: #00264b;  
+}
+.btn-info:hover {
+    background-color: #00264b;
+    border-color: #00264b;  
+}
+.login-page {
+  background-color: #00264b;
+}
+.register-page {
+  background-color: #00264b;
+}
+.login-logo a, .register-logo a {
+  color: #fff;
+  font-size: 25px;
+}
+a {
+  color: #00264b;
+}
+a:hover {
+  color: #aaa;
+}
+/*new added */
+body {
+    font-size: 14px !important;
+    padding-right:0px !important;
+}
+h5 {color: #949799;}
+th {
+    font-weight:100!important;
+}
+table.dataTable tbody td {
+    padding: 2px 0px;
+    padding:10px;
+}
+.dropzone {
+    min-height:80px;
+}
+.select2-container--default .select2-selection--single, .select2-selection .select2-selection--single {
+    padding: 3px 5px;
+    height: 30px;
+}
+.form-control {
+    height:30px!important;
+    margin-bottom: 10px;
+    padding: .075rem .75rem;
+}
+thead {
+    font-weight: 100;
+    line-height: 1;
+    font-size: inherit;
+}
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 200;
+}
+label {
+    margin-bottom: 0;
+}
+.sidebar-dark-primary {
+    background-color: #00264b;
+}
+.btn {
+    padding: 3px 5px;
+    border-radius: .25rem;
+}
+/* added */
+.ck-editor__editable,
+textarea {
+    min-height: 150px;
+}
+
+.datatable {
+    width: 100% !important;
+}
+
+table.dataTable tbody td.select-checkbox::before,
+table.dataTable tbody td.select-checkbox::after,
+table.dataTable tbody th.select-checkbox::before,
+table.dataTable tbody th.select-checkbox::after {
+    top: 50%;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dt-buttons {
+    margin-bottom: 0.333em;
+}
+
+.dt-buttons .btn {
+    margin-left: 0.333em;
+}
+
+.table.datatable {
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+table.dataTable thead th {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.select2 {
+    max-width: 100%;
+    width: 100%;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background-image: none;
+}
+
+.btn-group-xs > .btn,
+.btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.searchable-title {
+    font-weight: bold;
+}
+.select2-container--open {
+    z-index: 9999;
+}
+.searchable-fields {
+    padding-left:5px;
+}
+.searchable-link {
+    padding:0 5px 0 5px;
+}
+.searchable-link:hover   {
+    cursor: pointer;
+    background: #eaeaea;
+}
+.select2-results__option {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.form-group .required::after {
+    content: " *";
+    color: red;
+}
+
+.form-check.is-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+.dataTables_length label select {
+    width: 65px!important;
+}
+
+div.dt-button-collection {
+    padding: 0;
+}
+
+.buttons-columnVisibility {
+    display: block;
+}
+
+.buttons-columnVisibility.active {
+    background-color: rgba(128, 128, 128, 0.1);
+    font-weight: bolder;
+}
+
+.secondLevelMenu{
+  background-color:#011540 !important;
+  overflow-x:hidden;
+  max-width:100%;
+}
+
+.secondLevelMenu .fa-fw{
+  font-size:15px !important; 
+  margin-left:10px;
+
+}
+
+.brand-text.font-weight-light{
+  margin-left:10px;
+}
+
+.nav-item.has-treeview{
+   max-width:100%;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 7px;
+    height:7px;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+    background: #011540;
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #011540;
+}
+
+
+.dataTables_scrollBody::-webkit-scrollbar {
+    width: 15px;
+    height:15px;
+    background: #dddddd;
+}
+
+/* Track */
+.dataTables_scrollBody:-webkit-scrollbar-track {
+    background: #011540;
+}
+
+
+/* Handle */
+.dataTables_scrollBody::-webkit-scrollbar-thumb {
+    background: #011540;
+}
+
+/* Handle on hover */
+.dataTables_scrollBody::-webkit-scrollbar-thumb:hover {
+    background: #011540;
+}
+
+
+
+ 
+
+.btn{
+  padding-left:15px; padding-right:15px;
+  border-radius:10px;
+  border:none;
+}
+
+.btn.btn-default{
+  border:solid 1px #dddddd;
+}
+
+
+.quote_menu_bubble{
+    display:block; 
+    margin-left:10px; 
+    float:right; 
+    min-width:20px; 
+    padding-left:3px; 
+    padding-right:3px; 
+    height:20px; 
+    color:#000000; 
+    font-weight:bold; 
+    text-align:center; 
+    border-radius:5px; 
+    background-color:rgba(255,255,255,0.7)
+}
+
+.sidebar-dark-primary .nav-treeview>.nav-item>.nav-link.active {
+    color: #ffffff;
+    background-color: rgba(0,0,1,.7);
+}
+
+
+.dataTables_length{
+  padding-left:40px; 
+  padding-top:5px;
+}

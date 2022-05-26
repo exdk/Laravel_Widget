@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+	<input type="text" class="input_inn">
+	<select id="type_inn_ogrn">
+		<option value="inn">ИНН</option>
+		<option value="ogrn">ОГРН</option>
+	</select>
+	<button type="button">OK</button>
+	<div class="print_response"></div>
+	<div class="print_response_error"></div>
+
+</body>
+<script>
+	$("button").click(function(event) {
+		$('.print_response').html('');
+		$('.print_response_error').html('');
+		var inn_ogrn = $(".input_inn").val();
+		if (inn_ogrn == "") return false;
+		var selind = document.getElementById('type_inn_ogrn').options.selectedIndex;
+		var type = document.getElementById("type_inn_ogrn").options[selind].value;
+		$.ajax({   
+			type:'post',
+			url: "request.php",
+			data: {check:true, inn_ogrn:inn_ogrn, type:type},   
+			cache: false,
+			success: function(data){
+				var resp = JSON.parse(data);
+				if (resp.status == 0) $('.print_response_error').html(resp.response);
+				else $('.print_response').html(resp.response);
+			}
+		});
+	});
+
+	$(".input_inn").keypress(function() {
+		if (event.keyCode < 48 || event.keyCode > 57)
+	    event.returnValue= false;
+	});
+</script>
+<script src= 'js/custom.js'></script>
+</html>

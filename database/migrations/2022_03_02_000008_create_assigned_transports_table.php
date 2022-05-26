@@ -1,0 +1,94 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateAssignedTransportsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('assigned_transports', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->date('first_date_loading')->nullable();
+            $table->string('statys_vtoroe_bronirovanie')->nullable();
+            $table->string('tip_pogryzki_vtoroe_bronirovanie')->nullable();
+            $table->string('bronirovanie_zabronirovano')->nullable();
+            $table->string('status_yroven_perevozki')->nullable();
+            $table->string('statys_kem_razmeshcheno_yroven_perevozki')->nullable();
+            $table->string('status_yroven_postavki')->nullable();
+            $table->string('status_kem_razmeshcheno_yroven_postavki')->nullable();
+            $table->string('id_gryppi_perevozok')->nullable();
+            $table->string('tip')->nullable();
+            $table->string('dopolnitelnie_novera_gryzootpravitelya')->nullable();
+            $table->string('dopolnitelniy_n_gryzootpravitelay_2')->nullable();
+            $table->string('dopolnitelniy_n_gryzootpravitelya_3')->nullable();
+            $table->string('kolonka')->nullable();
+            $table->string('start')->nullable();
+            $table->string('mesto_naznacheniya')->nullable();
+            $table->string('transportnoe_sredstvo_trebovanie')->nullable();
+            $table->string('vibrosi_co_2')->nullable();
+            $table->string('ves')->nullable();
+            $table->string('obem')->nullable();
+            $table->string('dlina')->nullable();
+            $table->string('pozicii')->nullable();
+            $table->string('registracionniy_n')->nullable();
+            $table->string('vnytrenniy_kommentariy_k_perevozke')->nullable();
+            $table->string('statys')->nullable();
+            $table->string('pribitie')->nullable();
+            $table->string('otbitie')->nullable();
+            $table->string('tip_pogryzki')->nullable();
+            $table->string('statysi_razmestit_otslezhivanie_gryza')->nullable();
+            $table->string('nazvanie_kompanii_start')->nullable();
+            $table->string('gorod_start')->nullable();
+            $table->string('gorod_mesto_naznacheniya')->nullable();
+            $table->string('nazvanie_kompanii_mesto_naznacheniya')->nullable();
+            $table->string('spravochnaya_tsena_perevozki')->nullable();
+            $table->string('valyuta_ogovorennoy_tseni_perevozki')->nullable();
+            $table->string('n_perevozki')->nullable();
+            $table->string('transporeonid')->nullable();
+            $table->string('nomera_postavki')->nullable();
+            $table->string('id_postavki')->nullable();
+            $table->string('kategorii')->nullable();
+            $table->string('gryzootpravitel')->nullable();
+            $table->string('bronirovaniya_ne_zabronirovano_ypravlenie_vremennimi_oknami')->nullable();
+            $table->string('otdel_planirovaniya')->nullable();
+            $table->string('dispetcher_gryzootpravitelya')->nullable();
+            $table->string('dispetcher_perevozchika')->nullable();
+            $table->string('statys_eta')->nullable();
+            $table->string('eta_tip')->nullable();
+            $table->string('raznitsa_s_eta')->nullable();
+            $table->string('postavki')->nullable();
+            $table->string('vlozheniya')->nullable();
+            $table->date('data_pogryzki')->nullable();
+            $table->time('period_zagryzki')->nullable();
+            $table->date('data_razgryzki')->nullable();
+            $table->time('period_razgryzki')->nullable();
+            $table->datetime('poslednie_izmeneniya')->nullable();
+            $table->datetime('krayniy_srok')->nullable();
+            $table->string('otslezhivanie')->nullable();
+            $table->string('opredelennie_mesta_zagryzki')->nullable();
+            $table->string('pochtoviy_indeks_start')->nullable();
+            $table->string('region_start')->nullable();
+            $table->string('strana_start')->nullable();
+            $table->string('kommentariy_start')->nullable();
+            $table->date('dta_statysa_vtoroe_bronirovanie')->nullable();
+            $table->date('statys_data_statysa_yroven_perevozki')->nullable();
+            $table->date('data_statysa')->nullable();
+            $table->string('opredelennie_mesta_razgryzki')->nullable();
+            $table->string('pochtoviy_indeks_mesto_naznacheniya')->nullable();
+            $table->string('region_mesto_naznacheniya')->nullable();
+            $table->datetime('zabronirovano_s_vtoroe_bronirovanie')->nullable();
+            $table->date('data_naznacheniya')->nullable();
+            $table->string('strana_mesto_naznacheniya')->nullable();
+            $table->datetime('pribitie_vtoroe_bronirovanie')->nullable();
+            $table->datetime('zabronirovano_s')->nullable();
+            $table->datetime('otbitie_vtoroe_bronirovanie')->nullable();
+            $table->string('kommentariy_mesto_naznacheniya')->nullable();
+            $table->string('tip_predlozheniya')->nullable();
+            $table->string('predlozhenie')->nullable();
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    }
+}
